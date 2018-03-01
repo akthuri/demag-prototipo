@@ -23,15 +23,171 @@
 </div>
 
 <div class="nav">
-    <span class="menuButton"><a href="#" class="home">Inicio</a></a>
+    <span class="menuButton"><a href="index.html" class="home">Inicio</a></a>
     </span>
-    <span class="menuButton"><a href="#" class="create">Nueva Cotizacion</a></span>
 </div>
 
-<div class="body">
-    <h1>Cotizaciones</h1>
+<div id="body" class="body">
+    <form action="componentes.html">
 
+        <h1>Movimientos</h1>
 
+        <div style="margin-top: 20px;">
+            <table>
+                <tr>
+                    <td>Cantidad de carros</td>
+                    <td>
+                        <input type="radio" /> 1
+                        <input type="radio" /> 2
+                    </td>
+                    <td>Cantidad de ruedas motrices</td>
+                    <td>
+                        <input type="radio" /> 2
+                        <input type="radio" /> 4
+                    </td>
+                </tr>
+                <tr>
+                    <td>Velocidad de traslación principal en m/min</td>
+                    <td>
+                        <select>
+                            <option>28.8/7.2</option>
+                            <option>V7.56/30</option>
+                            <option>24/6</option>
+                            <option>con variador de frecuencia</option>
+                            <option>otra</option>
+                        </select>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Especifique velocidad de traslación carro</td>
+                    <td><input type="text" /></td>
+                    <td>Carga máxima por rueda (kgs., aprox.)</td>
+                    <td><input type="text" /></td>
+                </tr>
+                <tr>
+                    <td>Velocidad de traslación carro auxiliar en m/min</td>
+                    <td>
+                        <select>
+                            <option>28.8/7.2 m/min</option>
+                            <option>24/6 m/min</option>
+                            <option>con variador de frecuencia</option>
+                            <option>otra</option>
+                        </select>
+                    </td>
+                    <td>Switch límite de 2 pasos delantero</td>
+                    <td><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>Especifique velocidad de traslación carro auxiliar</td>
+                    <td><input type="text" /></td>
+                    <td>Switch límite de 2 pasos trasero</td>
+                    <td><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>Interruptor final de carrera carro</td>
+                    <td><input type="checkbox" /></td>
+                    <td>Sistema anticolisión trasero</td>
+                    <td><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>Torreta</td>
+                    <td>
+                        <input type="radio" /> Estandar
+                        <input type="radio" /> Otra
+                    </td>
+                    <td>Torreta traslado grúa</td>
+                    <td><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>Especifique torreta especial</td>
+                    <td><input type="text" /></td>
+                    <td>Tipo de torreta</td>
+                    <td>
+                        <input type="radio" /> Estandar Hormiga
+                        <input type="radio" /> Otra
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sirena</td>
+                    <td><input type="checkbox" /></td>
+                    <td>Especifique torreta</td>
+                    <td><input type="text" /></td>
+                </tr>
+                <tr>
+                    <td>Tipo de sirena</td>
+                    <td>
+                        <input type="radio" />Estandar Hormiga
+                        <input type="radio" />Otra
+                    </td>
+                    <td>Alarma sonora traslado grúa</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Especifique marca y modelo de sirena especial</td>
+                    <td><input type="text" /></td>
+                    <td>Especifique alarma</td>
+                    <td><input type="text" /></td>
+                </tr>
+                <tr>
+                    <td>Control simultaneo o independiente de carro(s)</td>
+                    <td>
+                        <select>
+                            <option>Simultaneo e Independiente</option>
+                            <option>Siempre Independiente</option>
+                            <option>Siempre Simultaneo</option>
+                        </select>
+                    </td>
+                    <td>Luminarias</td>
+                    <td><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>Observaciones carro</td>
+                    <td><input type="text" /></td>
+                    <td>Observaciones traslación grúa y puente</td>
+                    <td><input type="text" /></td>
+                </tr>
+                <tr>
+                    <td>Velocidad del puente en m / min</td>
+                    <td>
+                        <select>
+                            <option>9.6/37.8 m/min</option>
+                            <option>con variador de frecuencia</option>
+                            <option>otra</option>
+                        </select>
+                    </td>
+                    <td>Cantidad de luminarias</td>
+                    <td><input type="text" /></td>
+                </tr>
+                <tr>
+                    <td>Velocidad del puente</td>
+                    <td><input type="text" /></td>
+                    <td>Luminarias</td>
+                    <td>
+                        <input type="radio" /> Estandar
+                        <input type="radio" /> Otros
+                    </td>
+                </tr>
+                <tr>
+                    <td>Cantidad de ruedas traslación grúa</td>
+                    <td>4</td>
+                    <td>Especifique luminarias</td>
+                    <td><input type="text" /></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="buttons">
+            <span class="button">
+                <input type="submit" class="save" value="Guardar">
+            </span>
+            <span class="button">
+                <input type="submit" class="cancel" value="Cancelar">
+            </span>
+        </div>
+
+    </form>
 </div>
 
 <!-- import JavaScript -->

@@ -23,15 +23,228 @@
 </div>
 
 <div class="nav">
-    <span class="menuButton"><a href="#" class="home">Inicio</a></a>
+    <span class="menuButton"><a href="index.html" class="home">Inicio</a></a>
     </span>
-    <span class="menuButton"><a href="#" class="create">Nueva Cotizacion</a></span>
 </div>
 
-<div class="body">
-    <h1>Cotizaciones</h1>
+<div id="body" class="body">
+    <form action="cotizaciones-list.html">
 
+        <h1>Formacion de Precios</h1>
 
+        <div style="margin-top: 20px;">
+            <table>
+                <tr>
+                    <td>Moneda</td>
+                    <td>Pesos</td>
+                    <td>Precio unitario grúa</td>
+                    <td>99, 999.99</td>
+                </tr>
+                <tr>
+                    <td>Precio alimentación eléctrica</td>
+                    <td>99, 999.99</td>
+                    <td>Precio flete</td>
+                    <td>99, 999.99</td>
+                </tr>
+                <tr>
+                    <td>Precio otros</td>
+                    <td>99, 999.99</td>
+                    <td>Precio unitario</td>
+                    <td>99, 999.99</td>
+                </tr>
+            </table>
+        </div>
+
+        <div style="margin-top: 20px;">
+            <h3>Pagos</h3>
+            <table>
+                <tr>
+                    <td>Cantidad de eventos de pago</td>
+                    <td>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Evento de pago 1</td>
+                    <td>
+                        <select>
+                            <option>Anticipo</option>
+                            <option>Emision dibujo</option>
+                            <option>Autorizacion Dibujo</option>
+                            <option>Segun Avance</option>
+                            <option>Contra Embarque</option>
+                            <option>Contra Entrega</option>
+                            <option>Contra puesta en marcha</option>
+                            <option>Otro</option>
+                        </select>
+                    </td>
+                    <td>Especifique evento</td>
+                    <td><input type="text" /></td>
+                    <td>Porcentaje</td>
+                    <td><input type="text" /></td>
+                </tr>
+                <tr>
+                    <td>Evento de pago 2</td>
+                    <td>
+                        <select>
+                            <option>Anticipo</option>
+                            <option>Emision dibujo</option>
+                            <option>Autorizacion Dibujo</option>
+                            <option>Segun Avance</option>
+                            <option>Contra Embarque</option>
+                            <option>Contra Entrega</option>
+                            <option>Contra puesta en marcha</option>
+                            <option>Otro</option>
+                        </select>
+                    </td>
+                    <td>Especifique evento</td>
+                    <td><input type="text" /></td>
+                    <td>Porcentaje</td>
+                    <td><input type="text" /></td>
+                </tr>
+                <tr>
+                    <td>Evento de pago 3</td>
+                    <td>
+                        <select>
+                            <option>Anticipo</option>
+                            <option>Emision dibujo</option>
+                            <option>Autorizacion Dibujo</option>
+                            <option>Segun Avance</option>
+                            <option>Contra Embarque</option>
+                            <option>Contra Entrega</option>
+                            <option>Contra puesta en marcha</option>
+                            <option>Otro</option>
+                        </select>
+                    </td>
+                    <td>Especifique evento</td>
+                    <td><input type="text" /></td>
+                    <td>Porcentaje</td>
+                    <td><input type="text" /></td>
+                </tr>
+                <tr>
+                    <td>Evento de pago 4</td>
+                    <td>
+                        <select>
+                            <option>Anticipo</option>
+                            <option>Emision dibujo</option>
+                            <option>Autorizacion Dibujo</option>
+                            <option>Segun Avance</option>
+                            <option>Contra Embarque</option>
+                            <option>Contra Entrega</option>
+                            <option>Contra puesta en marcha</option>
+                            <option>Otro</option>
+                        </select>
+                    </td>
+                    <td>Especifique evento</td>
+                    <td><input type="text" /></td>
+                    <td>Porcentaje</td>
+                    <td><input type="text" /></td>
+                </tr>
+                <tr>
+                    <td>Evento de pago 5</td>
+                    <td>
+                        <select>
+                            <option>Anticipo</option>
+                            <option>Emision dibujo</option>
+                            <option>Autorizacion Dibujo</option>
+                            <option>Segun Avance</option>
+                            <option>Contra Embarque</option>
+                            <option>Contra Entrega</option>
+                            <option>Contra puesta en marcha</option>
+                            <option>Otro</option>
+                        </select>
+                    </td>
+                    <td>Especifique evento</td>
+                    <td><input type="text" /></td>
+                    <td>Porcentaje</td>
+                    <td><input type="text" /></td>
+                </tr>
+                <tr>
+                    <td>Factura global / desglosada</td>
+                    <td>
+                        <select>
+                            <option>Global</option>
+                            <option>Desglosado</option>
+                            <option>Segun especificacion cliente</option>
+                        </select>
+                    </td>
+                    <td>Cliente requiere fianza</td>
+                    <td>
+                        <select>
+                            <option>No Aplica</option>
+                            <option>Requiere una fianza</option>
+                            <option>Requiere dos fianzas</option>
+                            <option>Requiere tres fianzas</option>
+                        </select>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Tipo de fianza 1</td>
+                    <td>
+                        <select>
+                            <option>De Anticipo</option>
+                            <option>De Buena Calidad</option>
+                            <option>De Cumplimiento</option>
+                        </select>
+                    </td>
+                    <td>Tipo de fianza 2</td>
+                    <td>
+                        <select>
+                            <option>De Anticipo</option>
+                            <option>De Buena Calidad</option>
+                            <option>De Cumplimiento</option>
+                        </select>
+                    </td>
+                    <td>Tipo de fianza 3</td>
+                    <td>
+                        <select>
+                            <option>De Anticipo</option>
+                            <option>De Buena Calidad</option>
+                            <option>De Cumplimiento</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Aplica penalización</td>
+                    <td><input type="checkbox" /></td>
+                    <td>Tiempo de garantía</td>
+                    <td>
+                        <select>
+                            <option>6 Meses</option>
+                            <option>12 Meses</option>
+                            <option>18 Meses</option>
+                            <option>24 Meses</option>
+                            <option>No Aplica</option>
+                        </select>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="buttons">
+            <span class="button">
+                <input type="submit" class="save" value="Guardar">
+            </span>
+            <span class="button">
+                <input type="submit" class="cancel" value="Cancelar">
+            </span>
+        </div>
+
+    </form>
 </div>
 
 <!-- import JavaScript -->

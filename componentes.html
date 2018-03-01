@@ -23,15 +23,151 @@
 </div>
 
 <div class="nav">
-    <span class="menuButton"><a href="#" class="home">Inicio</a></a>
+    <span class="menuButton"><a href="index.html" class="home">Inicio</a></a>
     </span>
-    <span class="menuButton"><a href="#" class="create">Nueva Cotizacion</a></span>
 </div>
 
-<div class="body">
-    <h1>Cotizaciones</h1>
+<div id="body" class="body">
+    <form action="precios.html">
 
+        <h1>Estructura y Componentes</h1>
 
+        <div style="margin-top: 20px;">
+            <table>
+                <tr>
+                    <td>Trabe carril</td>
+                    <td><input type="checkbox" /></td>
+                    <td>Montaje de trabe carril por SHOSA</td>
+                    <td><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>Tipo de riel</td>
+                    <td>
+                        <select>
+                            <option>50x30</option>
+                            <option>60x40</option>
+                            <option>80x60</option>
+                            <option></option>
+                            <option>ASCE</option>
+                            <option>Burbach</option>
+                            <option>Otros</option>
+                        </select>
+                    </td>
+                    <td>Metros lineales de riel</td>
+                    <td><input type="text" /></td>
+                </tr>
+                <tr>
+                    <td>PAD</td>
+                    <td>
+                        <input type="radio" /> con PAD
+                        <input type="radio" /> sin PAD
+                    </td>
+                    <td>Tipo de riel ASCE</td>
+                    <td>
+                        <select>
+                            <option>25</option>
+                            <option>30</option>
+                            <option>40</option>
+                            <option>50</option>
+                            <option>60</option>
+                            <option>75</option>
+                            <option>80</option>
+                            <option>85</option>
+                            <option>90</option>
+                            <option>100</option>
+                            <option>104</option>
+                            <option>105</option>
+                            <option>135</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tipo de riel Burbach</td>
+                    <td>
+                        <select>
+                            <option>A 45</option>
+                            <option>A 55</option>
+                            <option>A 65</option>
+                            <option>A 75</option>
+                            <option>A 100</option>
+                            <option>A 120</option>
+                            <option>A 150</option>
+                            <option>otro</option>
+                        </select>
+                    </td>
+                    <td>Tipo de riel</td>
+                    <td><input type="text" /></td>
+                </tr>
+                <tr>
+                    <td>Columnas</td>
+                    <td><input type="checkbox" /></td>
+                    <td>Nivel piso a NPT en mm</td>
+                    <td><input type="text" /></td>
+                </tr>
+                <tr>
+                    <td>Cantidad de columnas</td>
+                    <td><input type="text" /></td>
+                    <td>Peso muerto de la grúa en kg (aprox.)</td>
+                    <td><input type="text" /></td>
+                </tr>
+                <tr>
+                    <td>Observaciones estructura</td>
+                    <td><input type="text" /></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+        <div style="margin-top: 20px;">
+            <h3>Adicionales</h3>
+            <table>
+                <tr>
+                    <td>Flete</td>
+                    <td>
+                        <input type="radio" /> Por cuenta de Shosa
+                        <input type="radio" /> Por cliente
+                    </td>
+                    <td>Alimentación eléctrica a lo largo de la nave</td>
+                    <td><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>Longitud del sistema (metros lineales)</td>
+                    <td><input type="text" /></td>
+                    <td>Localización de acometida</td>
+                    <td>
+                        <select>
+                            <option>Al centro</option>
+                            <option>En un extremo</option>
+                            <option>Otra</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Especifique localización</td>
+                    <td><input type="text" /></td>
+                    <td>Otros</td>
+                    <td><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>Otro adicional</td>
+                    <td><input type="text" /></td>
+                    <td>Observaciones adicionales</td>
+                    <td><input type="text" /></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="buttons">
+            <span class="button">
+                <input type="submit" class="save" value="Guardar">
+            </span>
+            <span class="button">
+                <input type="submit" class="cancel" value="Cancelar">
+            </span>
+        </div>
+
+    </form>
 </div>
 
 <!-- import JavaScript -->

@@ -23,15 +23,99 @@
 </div>
 
 <div class="nav">
-    <span class="menuButton"><a href="#" class="home">Inicio</a></a>
+    <span class="menuButton"><a href="index.html" class="home">Inicio</a></a>
     </span>
-    <span class="menuButton"><a href="#" class="create">Nueva Cotizacion</a></span>
 </div>
 
-<div class="body">
-    <h1>Cotizaciones</h1>
+<div id="body" class="body">
+    <form action="movimientos.html">
 
+        <h1>Mecanismo de Izaje</h1>
 
+        <div style="margin-top: 20px;">
+            <table>
+                <tr>
+                    <td>Cantidad de polipastos</td>
+                    <td>
+                        <input type="radio" /> 1
+                        <input type="radio" /> 2
+                    </td>
+                    <td>Segundo freno gancho principal</td>
+                    <td><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>Tipo de mecanismo de elevación gancho principal</td>
+                    <td>
+                        <select>
+                            <option>Cable</option>
+                            <option>Cadena</option>
+                            <option>Otro</option>
+                        </select>
+                    </td>
+                    <td>Dispositivo de toma de carga</td>
+                    <td><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>Izaje gancho principal en m</td>
+                    <td><input type="text" /></td>
+                    <td>Carrete retráctil</td>
+                    <td><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>Modelo</td>
+                    <td>
+                        <select>
+                            <option>POLIPAST1</option>
+                            <option>POLIPAST2</option>
+                            <option>POLIPAST3</option>
+                            <option>POLIPAST4</option>
+                        </select>
+                    </td>
+                    <td>Dispositivo medición sobrecarga</td>
+                    <td>
+                        <select>
+                            <option>Dispositivo ZMS</option>
+                            <option>Dispositivo MGS</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tipo de malacate</td>
+                    <td>
+                        <select>
+                            <option>Sin Definir</option>
+                            <option>MPW</option>
+                            <option>DW</option>
+                        </select>
+                    </td>
+                    <td>Sumador de carga</td>
+                    <td><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>Con varioador de frecuencia</td>
+                    <td><input type="checkbox" /></td>
+                    <td>Observaciones izaje</td>
+                    <td><input type="text" /></td>
+                </tr>
+                <tr>
+                    <td>Velocidad de izaje en m /min (aprox.)</td>
+                    <td><input type="text" /></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="buttons">
+            <span class="button">
+                <input type="submit" class="save" value="Guardar">
+            </span>
+            <span class="button">
+                <input type="submit" class="cancel" value="Cancelar">
+            </span>
+        </div>
+
+    </form>
 </div>
 
 <!-- import JavaScript -->

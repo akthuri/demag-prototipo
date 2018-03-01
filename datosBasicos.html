@@ -23,15 +23,187 @@
 </div>
 
 <div class="nav">
-    <span class="menuButton"><a href="#" class="home">Inicio</a></a>
+    <span class="menuButton"><a href="index.html" class="home">Inicio</a></a>
     </span>
-    <span class="menuButton"><a href="#" class="create">Nueva Cotizacion</a></span>
 </div>
 
-<div class="body">
-    <h1>Cotizaciones</h1>
+<div id="body" class="body">
+    <form action="izaje.html">
 
+        <h1>Datos Basicos</h1>
 
+        <div style="margin-top: 20px;">
+            <table>
+                <tr>
+                    <td>Cantidad de Gruas Iguales</td>
+                    <td><input type="text" /></td>
+                    <td>Mecanismo de elevación DIN 15020:</td>
+                    <td>
+                        <select>
+                            <option>1Cm</option>
+                            <option>1Bm</option>
+                            <option>1Am</option>
+                            <option>2m</option>
+                            <option>3m</option>
+                            <option>4m</option>
+                            <option>5m</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Capacidad de la(s) grúa(s) en kg</td>
+                    <td><input type="text" /></td>
+                    <td>Claro en mm</td>
+                    <td><input type="text" /></td>
+                </tr>
+                <tr>
+                    <td>Izaje</td>
+                    <td><input type="text" /></td>
+                    <td>Voltaje de operación, trifásico</td>
+                    <td>
+                        <select>
+                            <option>220 V/60 Hz</option>
+                            <option>440 V/ 60 Hz</option>
+                            <option>460 V/ 60 Hz</option>
+                            <option>otro</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Equivalente de FEM en CMAA?</td>
+                    <td><input type="checkbox" /></td>
+                    <td>Similar a clase de CMAA</td>
+                    <td><input type="text" /></td>
+                </tr>
+                <tr>
+                    <td>Medio de control</td>
+                    <td colspan="3">
+                        <select>
+                            <option>Botonera de mando DEMAG, deslizante a lo largo del puente</option>
+                            <option>Botonera fija en un extremo</option>
+                            <option>Botonera suspendida del carro</option>
+                            <option>Radiocontrol Demag</option>
+                            <option>Radiocontrol otro</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Grupo de solicitación estructural</td>
+                    <td>
+                        <select>
+                            <option>H1</option>
+                            <option>H2</option>
+                            <option>H3</option>
+                            <option>H4</option>
+                            <option>H5</option>
+                            <option>Sin Definir</option>
+                        </select>
+                    </td>
+                    <td>Cantidad de controles</td>
+                    <td>
+                        <input type="radio" /> 1
+                        <input type="radio" /> 2
+                    </td>
+                </tr>
+                <tr>
+                    <td>Voltaje de control</td>
+                    <td>
+                        <select>
+                            <option>24 V/60 Hz</option>
+                            <option>48 V/60 Hz</option>
+                            <option>110 V/60 Hz</option>
+                            <option>otro</option>
+                        </select>
+                    </td>
+                    <td>Clase de elevación</td>
+                    <td>
+                        <select>
+                            <option>B1</option>
+                            <option>B2</option>
+                            <option>B3</option>
+                            <option>B4</option>
+                            <option>B5</option>
+                            <option>B6</option>
+                            <option>Sin Definir</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Control Auxiliar</td>
+                    <td>
+                        <select>
+                            <option>Botonera de mando deslizable</option>
+                            <option>Infrarojo</option>
+                            <option>Radiocontrol</option>
+                            <option>otro</option>
+                        </select>
+                    </td>
+                    <td>Especifique control auxiliar</td>
+                    <td><input type="text" /></td>
+                </tr>
+                <tr>
+                    <td>Tipo de pintura</td>
+                    <td>
+                        <select>
+                            <option>Estándar SHO</option>
+                            <option>Estándar SHO con sandblast</option>
+                            <option>Otra con sandblast</option>
+                            <option>Otra</option>
+                        </select>
+                    </td>
+                    <td>Tipo y código de pintura</td>
+                    <td><input type="text" /></td>
+                </tr>
+                <tr>
+                    <td>Observaciones datos básicos/control</td>
+                    <td><input type="text" /></td>
+                    <td>Especifique fabricante y modelo</td>
+                    <td><input type="text" /></td>
+                </tr>
+                <tr>
+                    <td>Ambiente</td>
+                    <td>
+                        <select>
+                            <option>Normal</option>
+                            <option>Altas Temperaturas</option>
+                            <option>Humedo</option>
+                            <option>A prueba de explosión y/o antichispa</option>
+                            <option>Vapores corrosivos</option>
+                            <option>Polvoso</option>
+                            <option>Marino</option>
+                        </select>
+                    </td>
+                    <td>Trabaja en</td>
+                    <td>
+                        <input type="radio" /> Interperie
+                        <input type="radio" /> Sitio Cerrado
+                    </td>
+                </tr>
+                <tr>
+                    <td>Elevación sobre nivel del mar > 1000m</td>
+                    <td><input type="checkbox" /></td>
+                    <td>Elevación sobre nivel del mar > 3000m</td>
+                    <td><input type="checkbox" /></td>
+                </tr>
+                <tr>
+                    <td>Material que transporta</td>
+                    <td><input type="text" /></td>
+                    <td>Observaciones clasificación</td>
+                    <td><input type="text" /></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="buttons">
+            <span class="button">
+                <input type="submit" class="save" value="Guardar">
+            </span>
+                <span class="button">
+                <input type="submit" class="cancel" value="Cancelar">
+            </span>
+        </div>
+
+    </form>
 </div>
 
 <!-- import JavaScript -->
