@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cotizador</title>
+
+  <!-- import CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/cotizacion.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css.map">
+</head>
+<body>
+
+<div id="logo">
+  <a href="#">
+    <img src="img/logo.png" height="45" border="0" />
+  </a>
+
+  <div style="float: right; margin-right: 30px; margin-top: 10px;">
+
+    <span style="font-style: italic;"><a href="#">Salir</a></span>
+  </div>
+</div>
+
+<div class="nav">
+    <span class="menuButton"><a href="#" class="home">Inicio</a></a>
+    </span>
+</div>
+
+<div class="container">
+  <h1 class="is-size-3">Cotizacion</h1>
+
+  <div id="cotizacion">
+
+    <div id="encabezado">
+      <div class="columns">
+        <div class="column">
+          <div class="field">
+            <span class="label is-small">Folio</span>
+            <span>1524</span>
+          </div>
+        </div>
+        <div class="column">
+          <div class="field">
+            <span class="label is-small">Estatus</span>
+            <span>Capturando</span>
+          </div>
+
+        </div>
+        <div class="column">
+          <div class="field">
+            <label for="fechaCaptura" class="label is-small">Fecha Captura</label>
+            <div class="control"><input type="text" id="fechaCaptura" class="input is-small"></div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="field">
+            <label for="referencia" class="label is-small">Referencia</label>
+            <div class="control"><input type="text" id="referencia" class="input is-small"></div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="field">
+            <label for="cliente" class="label is-small">Cliente</label>
+            <div class="control"><input type="text" id="cliente" class="input is-small"></div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- encabezado -->
+
+    <div id="partidas">
+      <table class="table is-striped is-fullwidth">
+        <thead>
+        <tr>
+          <th style="width: 135px;">Codigo</th>
+          <th>Descripcion</th>
+          <th style="width: 70px">Cantidad</th>
+          <th style="width: 70px">Precio</th>
+          <th style="width: 130px;">Impuestos</th>
+          <th style="width: 150px;">UM</th>
+          <th>Total</th>
+        </tr>
+        </thead>
+        <tfoot>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>Subtotal</td>
+          <td>200</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>Impuestos</td>
+          <td>32</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>Total</td>
+          <td>232</td>
+        </tr>
+        </tfoot>
+        <tbody>
+        <tr>
+          <td>C2101</td>
+          <td>
+            <input type="text" class="input is-small" value="Componente 1">
+          </td>
+          <td>
+            <input type="text" class="input is-small has-text-right" value="1">
+          </td>
+          <td>
+            <input type="text" class="input is-small has-text-right" value="100">
+          </td>
+          <td>16</td>
+          <td>Pieza</td>
+          <td>116</td>
+        </tr>
+        <tr>
+          <td>RK2568</td>
+          <td><input type="text" class="input is-small" value="Polipasto EKKE"></td>
+          <td>
+            <input type="text" class="input is-small has-text-right" value="1">
+          </td>
+          <td>
+            <input type="text" class="input is-small has-text-right" value="100">
+          </td>
+          <td>16</td>
+          <td>Pieza</td>
+          <td>116</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="text" class="input is-small"></td>
+          <td>
+            <input type="text" class="input is-small has-text-right" value="">
+          </td>
+          <td>
+            <input type="text" class="input is-small has-text-right" value="">
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        </tbody>
+      </table>
+    </div> <!-- partidas -->
+
+    <div id="botones">
+      <div class="field is-grouped">
+        <div class="control"><button class="button is-link" onclick="list()">Guardar</button></div>
+        <div class="control"><button class="button" onclick="list()">Cancelar</button></div>
+      </div>
+    </div>
+
+  </div> <!-- cotizacion -->
+
+</div>
+
+<script>
+  function list() {
+    window.location = 'cotizaciones-list.html'
+  }
+</script>
+</body>
+</html>

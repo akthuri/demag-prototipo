@@ -1,0 +1,24 @@
+th {
+  background: none;
+  line-height: normal;
+}
+#cotizacion {
+  margin: 15px 0 0 0;
+}
+#encabezado {
+  border: solid 1px lightgray;
+  padding: 5px;
+}
+#partidas {
+  margin: 10px 0 0 0;
+  border: solid 1px lightgray;
+}
+#totales {
+  margin: 10px 0 0 0;
+}
+#botones {
+  margin: 10px 0 0 0;
+}
+table {
+  border: 0;
+}
