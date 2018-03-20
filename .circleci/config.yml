@@ -17,13 +17,17 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
       - run: yarn test
   deploy:
-    machine:
-      enabled: true
+    docker:
+      - image: circleci/node:8.10.0
     working_directory: ~/repo
     steps:
       - checkout
-      - run: git remote add dokku dokku@at-proyectos.site:hormigav1
-      - run: git push dokku master
+      - run: 
+          name: Agregar Dokku
+          command: git remote add dokku dokku@at-proyectos.site:hormigav1
+      - run: 
+          name: Deploy
+          command: git push dokku master
 
 workflows:
   version: 2
