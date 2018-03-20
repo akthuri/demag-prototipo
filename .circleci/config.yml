@@ -21,12 +21,11 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
-      - run: 
-          name: Agregar Dokku
-          command: git remote add dokku dokku@at-proyectos.site:hormigav1
-      - run: 
+      - deploy: 
           name: Deploy
-          command: git push dokku master
+          command: |
+            git remote add dokku dokku@at-proyectos.site:hormigav1
+            git push dokku master            
 
 workflows:
   version: 2
