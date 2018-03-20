@@ -24,7 +24,7 @@ jobs:
       - checkout
       - add_ssh_keys:
           fingerprints:
-            - "86:d6:3d:6f:fc:21:5d:a3:22:c7:13:f0:5c:79:0a:fd"
+            - "7b:f3:8e:2f:51:d2:a9:2f:9f:ff:71:65:45:06:56:9d"
       - run: 
           name: Agregar Dokku
           command: git remote add dokku dokku@at-proyectos.site:hormigav1
